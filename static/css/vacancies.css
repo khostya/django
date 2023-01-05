@@ -1,0 +1,9 @@
+table{
+    margin: 0 auto;
+    padding-top: 1vh;
+}
+
+td{
+    text-align: center;
+    border: 2px solid black;
+}
