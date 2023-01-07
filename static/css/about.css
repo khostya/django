@@ -1,5 +1,32 @@
 
 article{
-    width: auto;
-    margin: 20vh 80vh 20vh 20vh;
+
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.programmer{
+    width: 20vw;
+}
+
+.programmers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 700px){
+    main{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .content-wrapper{
+        width: 90vw;
+        margin: 3vh auto 0;
+    }
 }

@@ -39,8 +39,15 @@ a{
 aside{
     padding-left: 1vw;
     padding-right: 1vw;
+    margin: 0 auto;
+    min-width: 10vh;
     max-height: 30vh;
     border: 2px solid black;
+}
+
+.content-wrapper{
+    width: 65vw;
+    margin: 0 auto 0 1vw;
 }
 
 nav{

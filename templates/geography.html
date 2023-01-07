@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static "/css/main.css" %}"/>
-    <link rel="stylesheet" href="{% static "/css/header.css" %}" />
-    <link rel="stylesheet" href="{% static "/css/geography.css" %}" />
+    <link rel="stylesheet" href="{% static "/css/header.css" %}">
+    <link rel="stylesheet" href="{% static "/css/geography.css" %}">
     <link rel="stylesheet" href="{% static "/css/footer.css" %}">
+    <link rel="icon" href="{% static "/image/logo.svg" %}">
     <title>Title</title>
 </head>
 <body>
@@ -32,9 +33,16 @@
                     <a href="vacancies">Последние вакансии</a>
                 </nav>
             </aside>
-            <article>
-                fsfad
-            </article>
+            <div class="content-wrapper">
+                <article>
+                    <h2>Доля вакансий по городам для профессии инженер-программист</h2>
+                    <img class="graphic" src="{% static "image/graphics/Доля_вакансий_по_городам_для_профессии_инженер-программист.png" %}">
+                </article>
+                <article>
+                    <h2>Уровень зарплат по городам для професси инженер-программист</h2>
+                    <img class="graphic" src="{% static "image/graphics/Уровень_зарплат_по_городам_для_професси_ инженер-программист.png" %}">
+                </article>
+            </div>
         </main>
 
         <footer>

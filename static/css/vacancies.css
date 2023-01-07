@@ -1,9 +1,17 @@
 table{
-    margin: 0 auto;
-    padding-top: 1vh;
+    margin: auto;
+}
+
+main{
+    flex-direction: column;
 }
 
 td{
     text-align: center;
     border: 2px solid black;
+}
+
+.content-wrapper{
+    width: 98vw;
+    margin: auto;
 }
