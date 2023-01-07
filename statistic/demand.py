@@ -2,7 +2,6 @@ import os
 from reader import get_vacancies_by_names, get_vacancies
 from collections import defaultdict
 import matplotlib.pyplot as plt
-from geography import average_salary
 
 
 def show(x, y, title, ylabel, xlabel='Год'):
@@ -12,6 +11,11 @@ def show(x, y, title, ylabel, xlabel='Год'):
     plt.ylabel(ylabel)
     plt.title(title)
     plt.show()
+
+
+def average_salary(vacancies):
+    s = sum([(vacancy.salary.salary_from + vacancy.salary.salary_to) / 2 for vacancy in vacancies])
+    return int(s / len(vacancies))
 
 
 def by_salary(vacancies, title):
