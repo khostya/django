@@ -20,7 +20,7 @@ h2{
 }
 
 h1{
-    margin: auto auto 0;
+    margin: auto auto 1vh;
     text-align: center;
     font-size: larger;
 }
