@@ -1,5 +1,5 @@
 import os
-from reader import get_vacancies_by_names, get_vacancies
+from reader import get_vacancies
 from collections import defaultdict
 import matplotlib.pyplot as plt
 
@@ -49,10 +49,10 @@ def main():
     vacancies_by_names = [x for x in vacancies if any([name in x.name for name in names])]
 
     by_count(vacancies, 'Динамика количества вакансий по годам.')
-    by_count(vacancies_by_names, 'Динамика количества вакансий по годам для профессии Инженер-программист')
+    by_count(vacancies_by_names, 'Динамика количества вакансий по годам для профессии инженер-программист.')
 
-    by_salary(vacancies, 'Динамика уровня зарплат по годам')
-    by_salary(vacancies_by_names, 'Динамика уровня зарплат по годам для профессии Инженер-программист')
+    by_salary(vacancies, 'Динамика уровня зарплат по годам.')
+    by_salary(vacancies_by_names, 'Динамика уровня зарплат по годам для профессии инженер-программист.')
 
 
 if __name__ == '__main__':

@@ -8,7 +8,7 @@ def by_skills(vacancies):
     for year in range(2015, 2023):
         skills_dict = defaultdict(int)
         for vacancy in vacancies:
-            if vacancy.published_at.split('-')[0] != year:
+            if vacancy.published_at.split('-')[0] != str(year):
                 continue
             for skill in vacancy.skills:
                 skills_dict[skill] += 1
@@ -16,7 +16,8 @@ def by_skills(vacancies):
         skills.sort(key=lambda x: skills_dict[x], reverse=True)
         skills = skills[:10]
         count = [skills_dict[skill] for skill in skills]
-        show(skills, count, 'ТОП-10 навыков по годам. ' + str(year) + ' год', 'Частотность', 'Навык')
+        show(skills, count,
+             'ТОП-10 навыков по годам для профессии инженер-программист. ' + str(year) + ' год', 'Частотность', 'Навык')
 
 
 def main():
