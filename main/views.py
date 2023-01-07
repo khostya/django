@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponsePermanentRedirect
 
 
 def about(request):
@@ -15,6 +15,10 @@ def geography(request):
 
 def skills(request):
     return render(request, "skills.html")
+
+
+def main(request):
+    return HttpResponsePermanentRedirect("about")
 
 
 def vacancies(request):

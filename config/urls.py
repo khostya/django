@@ -24,5 +24,5 @@ urlpatterns = [
     path('vacancies', views.vacancies, name='vacancies'),
     path('geography', views.geography, name='geography'),
     path('demand', views.demand, name='demand'),
-
+    path('', views.main, name='main')
 ]
