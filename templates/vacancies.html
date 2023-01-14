@@ -34,6 +34,12 @@
                 </nav>
             </aside>
             <div class="content-wrapper">
+                <div class="update-wrapper">
+                    <label>
+                        <input type="date" name="date">
+                    </label>
+                    <button id="button">Обновить</button>
+                </div>
                 <table id="vacancyTable">
                     <thead>
                         <tr>
@@ -63,5 +69,13 @@
         </footer>
     </div>
     <script src="{% static "/js/last-vacancies.js" %}"></script>
+    <script>
+
+        button.onclick = onclick
+        function onclick() {
+            let date = document.getElementsByTagName("input").namedItem("date").valueAsDate
+            updateVacancies(date)
+        }
+    </script>
 </body>
 </html>

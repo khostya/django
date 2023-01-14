@@ -15,3 +15,16 @@ td{
     width: 98vw;
     margin: auto;
 }
+
+.update-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: end;
+    justify-content: center;
+}
+
+input{
+    height: 100%
+}
